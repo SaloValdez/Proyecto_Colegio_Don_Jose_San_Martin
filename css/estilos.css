@@ -1,0 +1,433 @@
+body, nav, ul, li, a  {margin: 0; padding: 0;}
+
+.toggleMenu {
+  display:  none;
+  padding: 8px 15px;
+  color: #fff;
+}
+.nav {
+  list-style: none;
+   *zoom: 1;
+
+}
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table;
+}
+.nav:after {
+  clear: both;
+}
+.nav ul {
+  list-style: none;
+  width: 250px;
+}
+.nav a {
+  padding: 10px 35px;
+  color:#fff;
+}
+.nav li {
+  position: relative;
+}
+.nav > li {
+  float: left;
+  border-bottom: 1px solid #1d7286;
+}
+.nav > li > .parent {
+  background-image: url("../czwer_files/downArrow.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+
+.nav li .more2 {
+      background-image: url("../czwer_files/downArrow2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    padding: 10px 35px;
+  color:#FFF;
+  }
+
+.nav li li .more3 {
+      background-image: url("../czwer_files/downArrow2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+  padding: 10px 35px;
+  color:#46433e;
+  }
+
+
+.nav > li > a {
+  display: block;
+}
+.nav li  ul {
+  position: absolute;
+  left: -9999px;
+}
+.nav > li.hover > ul {
+  left: 0;
+}
+.nav li li.hover ul {
+  left: 100%;
+  top: 0;
+}
+
+.nav li li  {
+  display: block;
+  background: #e3e0db;
+  position: relative;
+  z-index:100;
+color:#46433e;
+border-bottom: 1px solid #cac9c6;
+
+}
+
+.nav li li a {
+  display: block;
+  background: #e3e0db;
+  position: relative;
+  z-index:100;
+color:#46433e;
+border-bottom: 1px solid #cac9c6;
+}
+
+.nav li li a:hover {
+  display: block;
+  background: #06368b;
+  position: relative;
+color:#FFF;
+}
+
+.nav li li li a {
+  background:#e3e0db;
+  z-index:200;
+  color:#46433e;
+}
+
+.nav li li li a:hover {
+  background:#06368b;
+  color:#FFF;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+.nav a {
+  padding: 10px 20px;
+  color:#fff;
+}
+
+.nav li .more2 {
+      background-image: url("../czwer_files/downArrow2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    padding: 10px 20px;
+  color:#FFF;
+  }
+
+.nav li li .more3 {
+      background-image: url("../czwer_files/downArrow2.png");
+      background-repeat: no-repeat;
+      background-position: right;
+  padding: 10px 20px;
+  color:#46433e;
+  }
+}
+
+@media screen and (max-width: 959px) {
+
+.nav {
+  list-style: none;
+   *zoom: 1;
+   background:#0f536a;
+}
+.nav a {
+  padding: 10px 20px;
+  color:#fff;
+}
+  .active {
+      display: block;
+  }
+  .nav > li {
+      float: none;
+  }
+  .nav > li > .parent {
+      background-position: 95% 50%;
+  }
+
+  .nav > li > .parent {
+ background-image: none;
+}
+  .nav li .more2 {
+           background-image: url("../czwer_files/downArrow2.png");
+   background-repeat: no-repeat;
+      background-position: right;
+      padding: 8px 15px;
+      margin: 2px 10px 2px 5px;
+      cursor: pointer;
+      z-index: 200;
+      position: relative;
+
+  }
+
+
+    .nav li .more3 {
+           background-image: url("../czwer_files/downArrow2.png");
+   background-repeat: no-repeat;
+      background-position: right;
+      padding: 8px 15px;
+      margin: 2px 10px 2px 5px;
+      cursor: pointer;
+      z-index: 200;
+      position: relative;
+  background-color:#3366FF;
+
+  }
+
+ .nav li .more2:before {
+
+padding: 15px 15px;
+}
+
+.nav li .more {
+  background-image: url("../czwer_files/downArrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  float: right;
+  width: 20%;
+  /*border-left: 1px solid rgba(255,255,255,.3);*/
+  padding: 8px 15px;
+  margin: 2px 5px 2px 0px;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+  }
+
+.nav li .more:before {
+content: "";
+background: rgba(0,0,0,.3);
+width: 0;
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: -2px;
+}
+
+  .nav ul {
+      display: block;
+      width: 100%;
+  }
+ .nav > li.hover > ul , .nav li li.hover ul {
+      position: static;
+  }
+
+}
+
+/**  estilos barner animado****/
+
+#full-width-slider {
+  width: 100%;
+  color: #FFF;
+}
+.coloredBlock {
+  padding: 12px;
+  /*background: rgba(255,0,0,0.6);
+  color: #FFF;*/
+   width: 250px;
+   left: 20%;
+   top: 5%;
+}
+.infoBlock {
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  max-width: 700px;
+  /*background: #FFF;
+  background: rgba(255, 255, 255, 0.8);*/
+  overflow: hidden;
+  text-align:right;
+  padding: 45px;
+}
+.infoBlockLeftBlack {
+  /*color: #FFF;
+  background: #000;
+  background: rgba(0,0,0,0.75);*/
+  right: 100px;
+  width:60%;
+}
+
+
+.infoBlock p {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  text-decoration:none;
+    font-size:64px;
+  line-height:70px;
+  margin: 0;
+  padding-bottom: 3px;
+  text-align:left;
+    color: #FFF;
+
+}
+.infoBlock a {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format('woff');
+  color: #000;
+  text-decoration: none;
+    font-size:20px;
+  line-height:25px;
+}
+.photosBy {
+  position: absolute;
+  line-height: 24px;
+  font-size: 12px;
+  background: #FFF;
+  /*color: #000;*/
+  padding: 0px 10px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  top: auto;
+  border-radius: 2px;
+  z-index: 25;
+}
+.photosBy a {
+  /*color: #000;*/
+}
+.fullWidth {
+  max-width: 1180px;
+  margin: 0 auto 24px;
+}
+
+@media screen and (min-width:960px) and (min-height:660px) {
+  .heroSlider .rsOverflow,
+  .royalSlider.heroSlider {
+      height: 360px !important;
+  }
+}
+
+@media screen and (min-width:960px) and (min-height:1000px) {
+    .heroSlider .rsOverflow,
+    .royalSlider.heroSlider {
+        height: 360px !important;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  .royalSlider.heroSlider,
+  .royalSlider.heroSlider .rsOverflow {
+    height: 300px !important;
+  }
+  .infoBlock {
+    padding: 10px;
+    height: auto;
+    max-height: 100%;
+    min-width: 40%;
+     top: 20%;
+    right: auto;
+    font-size: 12px;
+  }
+  .infoBlock h3 {
+     font-size: 40px;
+     line-height: 45px;
+  }
+  .infoBlock p {
+     font-size: 40px;
+     line-height: 45px;
+  }
+}
+/*********** FIS ESTILLOS BARNER ***/
+
+
+li:hover{
+  background-color: #0935B2;
+
+}
+a:hover{
+  color: #0935B2;
+}
+
+
+
+
+/** GALERIA FOTOS**/
+
+                img {
+                  display: block;
+                  max-width: 100%;
+                }
+
+                .galeria {
+                  padding: 20px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                }
+
+                .galeria__item {
+                  width: 80%;
+                  cursor: pointer;
+                }
+                @media (min-width:480px) {
+                  .galeria__item {
+                    width: 48%;
+                    margin: 5px;
+                  }
+                }
+                @media (min-width:768px) {
+                  .galeria__item {
+                    width: 30%;
+                  }
+                }
+                @media (min-width:1024px) {
+                  .galeria__item {
+                    width: 20%;
+                    margin: 15px;
+                  }
+                }
+
+                .modal {
+                  position: fixed;
+                  width: 100%;
+                  height: 100vh;
+                  background: rgba(0,0,0,0.7);
+                  top: 0;
+                  left: 0;
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+
+                .modal__img {
+                  width: 70%;
+                  max-width: 700px;
+                }
+
+                .modal__boton {
+                  width: 50px;
+                  height: 50px;
+                  color: #fff;
+                  font-weight: bold;
+                  font-size: 25px;
+                  font-family: monospace;
+                  line-height: 50px;
+                  text-align: center;
+                  background: red;
+                  border-radius: 50%;
+                  cursor: pointer;
+
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+                }
+
+
+
+
+/**  fin galetia  fotos**/

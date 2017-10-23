@@ -1,0 +1,15 @@
+.section-1 { background: url(http://www.alpamayo.edu.pe/images/baby_shower.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 640px; position: relative; }
+.section-2 { background: url(http://www.alpamayo.edu.pe/images/matrimonio.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 640px; position: relative; }
+
+.section-3 { background: url(http://www.alpamayo.edu.pe/images/baby_shower2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 320px; position: relative; }
+
+.section-4 { background: url(http://www.alpamayo.edu.pe/images/matrimonio2.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 320px; position: relative; }
+
+.section-5 { background: url(http://www.alpamayo.edu.pe/images/frase_patron.jpg) repeat ; height: 300px; position: relative; }
+
+.section-text {-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 320px; position: relative; }
+
+
+
+
+/*h5.texto01 { text-align: center;  color: #FFF; font-size: 20px; font-weight: 700; background: url(../images/parrillas_ico.png) no-repeat top center; padding-top: 95px; margin-top: 30px; }*/

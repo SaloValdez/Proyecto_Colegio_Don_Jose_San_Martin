@@ -1,0 +1,364 @@
+
+<html>
+
+          <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+          <link rel="shortcut icon" href="favicon.ico">
+
+          <title>..:: Colegio Don Jose de San Martin ::..</title>
+
+          <script type="text/javascript" src="js/script.js"></script>
+          <link rel="stylesheet" href="css/bst/bootstrap.min.css">
+
+          <link href="css/back.css" rel="stylesheet" type="text/css" />
+          <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+          <link href="css/style.css" rel="stylesheet" type="text/css" />
+          <link href="css/default.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="css/estilos.css">
+
+          <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+          <!--TODO ESCRIPT  ----SALO-->
+          <script type="text/javascript" src="jquery.js"></script>
+          <script src="js/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+      <div id="banner"  style=" background-color:#04388c;">
+          <div class="container" >
+               <div class="four columns"  >
+                  <div style="height:10px"></div>
+                  <a href="../index-2.html"><img src="img/alpamayo_logo.png" border="0"  /></a>
+               </div>
+               <div class="twelve columns"  >
+                   <div class="eight columns"  style="float:right; margin-top: 5px; padding:5px; background-color:#032f76"  >
+                      <div class="one_fourth nopadding" style="text-align:center"  >
+                      <a href="index.html" class="link_01a">Inicio</a>
+                      </div>
+                       <div class="one_fourth nopadding" style="text-align:center" >
+                       <a href="institucion.html"  class="link_01">Organizacion</a>
+                       </div>
+                       <div class="one_fourth nopadding" style="text-align:center" >
+                       <a href="#"  class="link_01c">Version Español</a>
+                       </div>
+
+                        <div class="one_fourth nopadding"  style="text-align:center" ><a href="intranet.html" target="_blank"  class="link_01d">Ingresar</a>
+                        </div>
+                        <div class="one_fourth nopadding"  style="text-align:center" ><a href="intranet.html" target="_blank"  class="link_02">EXTRANET</a>
+                        </div>
+                  </div>
+               </div>
+
+          </div>
+      </div>
+
+      <div id="banner"  style="background-image:url(img/back_botonera.jpg); background-repeat:repeat-x">
+
+  <!------CONTENEDOR MENU-->
+      <div class="container" >
+          <!--TODO-- ESTILOS 1-->
+                              <style>
+
+                              </style>
+          <a class="toggleMenu" href="#" style="display: inline-block;"><img src="img/ico_responsive.png"  /></a>
+              <ul class="nav" style="display: none;">
+                    <li><a href="index.html" >Inicio</a></li>
+
+                   <li> <a href="#"> Institucion </a>
+                       <ul >
+                           <li><a href="Institucion.html">Mision </a></li>
+                           <li><a href="Institucion.html">Vision</a></li>
+
+                       </ul>
+                   </li>
+                  <li><a href="contactos.html"> Pre-Matricula </a></li>
+
+   				        <li><a href="Reseña.html" >Reseña</a></li>
+
+                  <li> <a href="fotos.html"> Fotos </a>
+                      <ul >
+          								<li><a href="fotos.html">Logros </a></li>
+                          <li><a href="fotos.html">Colegio</a></li>
+          								<li><a href="fotos.html">Docentes</a></li>
+                      </ul>
+        				  </li>
+
+              		<li><a href="logros.html" target="_blank">Logros</a></li>
+
+                  <li><a href="contactos.html" >Contactos</a></li>
+            </ul>
+      </div>
+    <!------ FIN   CONTENEDOR MENU-->
+
+
+    <!------ SCRIPT PARA MENU ---->
+              <script>
+                var ww = document.body.clientWidth;
+            $(document).ready(function () {
+                $('.nav li a').each(function () {
+                    if ($(this).next().length > 0) {
+                        $(this).addClass('parent');
+                    }
+                    ;
+                });
+                $('.toggleMenu').click(function (e) {
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    $('.nav').toggle();
+                });
+                adjustMenu();
+            });
+            $(window).bind('resize orientationchange', function () {
+                ww = document.body.clientWidth;
+                adjustMenu();
+            });
+            var adjustMenu = function () {
+                if (ww < 959) {
+                    if (!$('.more')[0]) {
+                        $('<div class="more">&nbsp;</div>').insertBefore($('.parent'));
+                    }
+
+                    $('.toggleMenu').css('display', 'inline-block');
+                    if (!$('.toggleMenu').hasClass('active')) {
+                        $('.nav').hide();
+                    } else {
+                        $('.nav').show();
+                    }
+                    $('.nav li').unbind('mouseenter mouseleave');
+                    $('.nav li a.parent').unbind('click');
+                    $('.nav li .more').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+            		 $('.nav li .more2').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+            		 $('.nav li .more3').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+
+                } else if (ww >= 959) {
+                    $('.more').remove();
+            		$('.more2').show();
+            		$('.more3').show();
+                    $('.toggleMenu').css('display', 'none');
+                    $('.nav').show();
+                    $('.nav li').removeClass('hover');
+                    $('.nav li a').unbind('click');
+                    $('.nav li').unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function () {
+                        $(this).toggleClass('hover');
+                    });
+                }
+            };
+        </script>
+
+          <!------ FIN  SCRIPT PARA MENU ---->
+
+
+
+
+
+
+
+                  <div class="container" style="padding-top:10px">
+
+                            <div class="container">
+                              <div id="seleccion">
+                              <!-----------NOTICIAS--------------->
+
+
+                              <div class="three columns">
+                              <div style="padding-right:20px">
+                              <div style="margin:0 8px 10px 8px">
+                            <h3>Institucion</h3>
+                            </div>
+                            <div  style="background-color:#06368b; height:2px; width:100%"  ></div>
+                              <div style="margin:10px 10px"><a href="#" class="menu_destacados2">
+                                Mision</a></div>
+                            <!--
+                               -->
+                              <div style="margin:10px 10px"><a href="#" class="menu_destacados2">
+                                  Vision</a></div>
+                            <!--
+
+                               -->
+                              </div>
+                              </div>
+                            <div class="thirteen columns" >
+
+
+                                      <img src="img_banner/familia.jpg" class="scaleimg">
+                                        <div class="cont3-sep"></div>
+                                      <h1>Mision</h1>
+                                    <div class="cont5-sep"></div>
+                                    <!-- Imagen -->
+
+                                      <div id="contenido">
+                                          <span class="texto_conte">
+                                              <div class="eight columns" >
+                                                <div>
+                                                Conservar en el recuerdo cada una de las vivencias ofrecidas por esta casa de estudios, para mostrar a las nuevas generaciones de estudiantes sanmartinianos cuales son nuestras costumbres y tradiciones; dentro de un marco de respeto, responsabilidad, honestidad e identidad
+                                                </div>
+
+
+                                              </div>
+                                              <div class="four columns" >
+                                                  <div  style="padding-left:15px">
+                                                    <h2 style="text-align:center">
+                                                      <p> - Identidad
+                                                      -Responsabilidad-
+                                                      -Respeto
+                                                      </p>
+                                                    </h2>
+                                                  </div>
+                                              </div>
+                                          </span>
+                                      </div>
+
+                                    <div class="cont-sep">
+
+                                    </div>
+                                        <!-- GALERIA -->
+                                        <!-- FIN GALERIA -->
+                            </div>
+
+                            </div>
+
+
+                          </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                                      <div class="container" style="padding-top:10px">
+
+                                                <div class="container">
+                                                  <div id="seleccion">
+                                                  <!-----------NOTICIAS--------------->
+
+                                                  <div class="three columns">
+                                                  <div style="padding-right:20px">
+                                                  <div style="margin:0 8px 10px 8px">
+                                                <h3></h3>
+                                                </div>
+                                                <div  style="background-color:#06368b; height:2px; width:100%"  ></div>
+                                                  <div style="margin:10px 10px"><a href="#" class="menu_destacados2">
+                                                    </a></div>
+                                                <!--
+                                                   -->
+                                                  <div style="margin:10px 10px"><a href="#" class="menu_destacados2">
+                                                      </a></div>
+                                                <!--
+
+                                                   -->
+                                                  </div>
+                                                  </div>
+                                                <div class="thirteen columns" >
+
+                                                            <div class="cont3-sep"></div>
+                                                          <h1>Vision</h1>
+                                                        <div class="cont5-sep"></div>
+                                                        <!-- Imagen -->
+
+                                                          <div id="contenido">
+                                                              <span class="texto_conte">
+                                                                  <div class="eight columns" >
+                                                                    <div>
+                                                                  Ser la primera elección de las familias que garantice la formación académica, la madurez emocional y la educación en valores necesarios para el futuro de sus hijos en un mundo tecnológico y global.
+                                                                    </div>
+
+                                                                    </div>
+
+                                                                  </div>
+                                                                  <div class="four columns" >
+                                                                      <div  style="padding-left:15px">
+                                                                        <h2 style="text-align:center">
+                                                                          <p> -Ser la primera Eleccion</p>
+                                                                        </h2>
+                                                                      </div>
+                                                                  </div>
+                                                              </span>
+                                                          </div>
+                                                        <div class="cont-sep">
+
+                                                        </div>
+                                                            <!-- GALERIA -->
+                                                            <!-- FIN GALERIA -->
+                                                </div>
+
+                                                </div>
+
+
+                                              </div>
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+          <!------------------------------------------------  ANTES FOOTER-->
+          <div class="container">
+              <div class="thin-sep"></div>
+              <div class="one_sixth nopadding">
+                <a href="http://www.munitacna.gob.pe/" target="_blank"><img src="img/logo_nidotorrecillas.jpg"  border="0" class="scaleimg" /></a>
+              </div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.minedu.gob.pe/" target="_blank"><img src="img/ps_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://iestpvigil.edu.pe/" target="_blank"><img src="img/salcantay_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.unjbg.edu.pe/portal/" target="_blank"><img src="img/ib.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.munialtoalianza.gob.pe/" target="_blank"><img src="img/ibsc_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.upt.edu.pe/upt/web/index.php" target="_blank"><img src="img/logo_udenavarra.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.ceid.unjbg.edu.pe/" target="_blank"><img src="img/logo_udepiura.jpg"  border="0"  class="scaleimg" /></a></div>
+          </div>
+          <!------ FIN ANTES FOOTER-->
+
+
+                  <div style="height:30px">&nbsp;</div>
+                  <div class="five_sixth nopadding" style=" background-image:url(img/pie_back.jpg); background-repeat: repeat-x; background-color:#06368b">
+                  <div class="container" style="padding-bottom:30px; padding-top:45px;" >
+                      <div align="center">
+                        <p class="texto_pie">&copy; Colegio Don jose de San Martin - Colegio 42088.
+                            <br />
+                              Av. Juan Moore 312. Alto de La Alianza - Tacna - Perú.<br />
+                           Telefono: (052) 310001 | Email:
+                            djsm-tacna02@yahoo.es     <br /><br />
+                            © 2017 Lizethe Evenling Mamani Pacohuanaco - Todos los derechos reservados
+                                <a href="https://www.facebook.com/lizette.mamani.7?lst=100003815207866%3A100003872864523%3A1508729171" target="_blank" class="menu_avra">Lize</a>
+                          </p>
+                        <p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p>
+                      </div>
+                  </div>
+
+                  <script type="text/javascript" src="js/bootstrap.min.js">
+
+                  </script>
+
+                  <script src="modal.js"></script>
+
+</body>
+</html>

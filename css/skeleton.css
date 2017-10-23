@@ -1,0 +1,695 @@
+/* Table of Contents
+==================================================
+    #Base 960 Grid    
+    #Tablet (Portrait)
+    #Mobile (Portrait) 
+    #Mobile (Landscape)
+    #Clearing */
+ 
+ .nopadding { padding: 0 !important; margin: 0 !important; }
+ .padding { padding: 2px !important; margin: 0 !important; }
+ 
+    
+ .full-width {width:960px; height:auto; overflow:hidden}
+  #teaser.normal {width: 960px;}
+ 
+.one_half { width: 50%; } /* x */
+.one_third { width: 45%; } /* x */
+.two_thirds { width: 55%; }
+.one_fourth { width: 20%; }/* x */
+.three_fourths { width: 70%; } /* x */
+.one_fifth { width: 10%; }/* x */
+.two_fifth { width: 33.33%; } /* x */
+.three_fifth { width: 85%; } 
+.four_fifth { width: 90%; }/* x */
+.one_sixth { width: 14.25%; } /* x */
+.five_sixth { width: 100%; }
+ 
+.one_half,
+.one_third,
+.two_thirds,
+.three_fourths,
+.one_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+  position: relative;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-bottom: 20px;
+	float: left;
+}
+ 
+.last {margin-right:0 !important;}
+ 
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+ 
+.span1,
+.one.column,
+.one.columns {
+  width: 100px;
+}
+ 
+.two.columns {
+  width: 140px;
+}
+ 
+.three.columns {
+  width: 172px;
+}
+ 
+.four.columns {
+  width: 220px;
+}
+ 
+.five.columns {
+  width: 300px;
+}
+ 
+.six.columns {
+  width: 340px;
+}
+ 
+.seven.columns {
+  width: 400px;
+}
+ 
+.eight.columns {
+  width: 460px;
+}
+ 
+.nine.columns {
+  width: 520px;
+}
+ 
+.ten.columns {
+  width: 580px;
+}
+ 
+.eleven.columns {
+  width: 620px;
+}
+ 
+.twelve.columns {
+  width: 700px;
+}
+ 
+.thirteen.columns {
+  width: 748px;
+}
+ 
+.fourteen.columns {
+  width: 780px;
+}
+ 
+.fifteen.columns {
+  width: 820px;
+}
+ 
+.sixteen.columns {
+  width: 940px;
+}
+ 
+.one-third.column {
+  width: 80px;
+}
+ 
+.two-thirds.column {
+  width: 166px;
+}
+ 
+.one-third.column.alpha,
+.one-third.column.omega {
+  width: 80px;
+}
+ 
+.two-thirds.column.alpha,
+.two-thirds.column.omega {
+  width: 180px;
+}
+ 
+.column, .columns {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+}
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+ 
+
+ 
+@media only screen and (min-width: 1600px) {
+
+ .full-width {width:1200px; height:auto; overflow:hidden}
+  #teaser.normal {width: 1200px;}
+ 
+ 
+  .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ 
+  .span1,
+  .one.column,
+  .one.columns {
+    width: 130px;
+  }
+ 
+  .two.columns {
+    width: 180px;
+  }
+ 
+  .three.columns {
+    width: 220px;
+  }
+ 
+  .four.columns {
+    width: 280px;
+  }
+ 
+  .five.columns {
+    width: 380px;
+  }
+ 
+  .six.columns {
+    width: 430px;
+  }
+ 
+  .seven.columns {
+    width: 500px;
+  }
+ 
+  .eight.columns {
+    width: 580px;
+  }
+ 
+  .nine.columns {
+    width: 660px;
+  }
+ 
+  .ten.columns {
+    width: 730px;
+  }
+ 
+  .eleven.columns {
+    width: 780px;
+  }
+ 
+  .twelve.columns {
+    width: 880px;
+  }
+ 
+  .thirteen.columns {
+    width: 940px;
+  }
+ 
+  .fourteen.columns {
+    width: 980px;
+  }
+ 
+  .fifteen.columns {
+    width: 1030px;
+  }
+ 
+  .sixteen.columns {
+    width: 1180px;
+  }
+ 
+  .one-third.column {
+    width: 90px;
+  }
+ 
+  .two-thirds.column {
+    width: 215px;
+  }
+ 
+  .one-third.column.alpha,
+  .one-third.column.omega {
+    width: 90px;
+  }
+ 
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: 230px;
+  }
+ 
+  .column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+	
+  .full-width {width:1200px; height:auto; overflow:hidden}
+  #teaser.normal {width: 1200px;}
+ 
+ 
+  .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ 
+  .span1,
+  .one.column,
+  .one.columns {
+    width: 130px;
+  }
+ 
+  .two.columns {
+    width: 180px;
+  }
+ 
+  .three.columns {
+    width: 220px;
+  }
+ 
+  .four.columns {
+    width: 280px;
+  }
+ 
+  .five.columns {
+    width: 380px;
+  }
+ 
+  .six.columns {
+    width: 430px;
+  }
+ 
+  .seven.columns {
+    width: 500px;
+  }
+ 
+  .eight.columns {
+    width: 580px;
+  }
+ 
+  .nine.columns {
+    width: 660px;
+  }
+ 
+  .ten.columns {
+    width: 730px;
+  }
+ 
+  .eleven.columns {
+    width: 780px;
+  }
+ 
+  .twelve.columns {
+    width: 880px;
+  }
+ 
+  .thirteen.columns {
+    width: 940px;
+  }
+ 
+  .fourteen.columns {
+    width: 980px;
+  }
+ 
+  .fifteen.columns {
+    width: 1030px;
+  }
+ 
+  .sixteen.columns {
+    width: 1180px;
+  }
+ 
+  .one-third.column {
+    width: 90px;
+  }
+ 
+  .two-thirds.column {
+    width: 215px;
+  }
+ 
+  .one-third.column.alpha,
+  .one-third.column.omega {
+    width: 90px;
+  }
+ 
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: 230px;
+  }
+ 
+  .column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+  }
+ 
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ 
+  .span1,
+  .one.column,
+  .one.columns {
+    width: 76px;
+  }
+ 
+  .two.columns {
+    width: 108px;
+  }
+ 
+  .three.columns {
+    width: 133.6px;
+  }
+ 
+  .four.columns {
+    width: 172px;
+  }
+ 
+  .five.columns {
+    width: 236px;
+  }
+ 
+  .six.columns {
+    width: 268px;
+  }
+ 
+  .seven.columns {
+    width: 316px;
+  }
+ 
+  .eight.columns {
+    width: 364px;
+  }
+ 
+  .nine.columns {
+    width: 412px;
+  }
+ 
+  .ten.columns {
+    width: 460px;
+  }
+ 
+  .eleven.columns {
+    width: 492px;
+  }
+ 
+  .twelve.columns {
+    width: 556px;
+  }
+ 
+  .thirteen.columns {
+    width: 594.40px;
+  }
+ 
+  .fourteen.columns {
+    width: 620px;
+  }
+ 
+  .fifteen.columns {
+    width: 652px;
+  }
+ 
+  .sixteen.columns {
+    width: 748px;
+  }
+ 
+  .one-third.column {
+    width: 90px;
+  }
+ 
+  .two-thirds.column {
+    width: 128px;
+  }
+ 
+  .one-third.column.alpha,
+  .one-third.column.omega {
+    width: 90px;
+  }
+ 
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: 140px;
+  }
+ 
+  .column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+  }
+ 
+ 
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ 
+  .one.column,
+  .one.columns, .span1,
+  .two.columns, .span2,
+  .three.columns, .span3,
+  .four.columns, .span4,
+  .five.columns, .span5,
+  .six.columns, .span6,
+  .seven.columns, .span7,
+  .eight.columns, .span8,
+  .nine.columns, .span9,
+  .ten.columns, .span10,
+  .eleven.columns, .span11,
+  .twelve.columns, .span12,
+  .thirteen.columns, .span13,
+  .fourteen.columns, .span14,
+  .fifteen.columns, .span15,
+  .sixteen.columns, .span16,
+  .one-third.column,
+  .two-thirds.column,
+  .col,
+  .one-third.column.alpha,
+  .one-third.column.omega,
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: 280px;
+	margin-bottom:5px;
+  }
+ 
+  .one_half,
+  .one_third,
+  .two_thirds,
+  .three_fourths,
+  .one_fourth,
+  .one_fifth,
+  .two_fifth,
+  .three_fifth,
+  .four_fifth,
+  .one_sixth,
+  .five_sixth {
+    width: 100% !important;
+  }
+ 
+  .column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+  }
+ 
+  .container .offset-by-one, .container .offset1,
+  .container .offset-by-two, .container .offset2,
+  .container .offset-by-three, .container .offset3,
+  .container .offset-by-four, .container .offset4,
+  .container .offset-by-five, .container .offset5,
+  .container .offset-by-six, .container .offset6,
+  .container .offset-by-seven, .container .offset7,
+  .container .offset-by-eight, .container .offset8,
+  .container .offset-by-nine, .container .offset9,
+  .container .offset-by-ten, .container .offset10,
+  .container .offset-by-eleven, .container .offset11,
+  .container .offset-by-twelve, .container .offset12,
+  .container .offset-by-thirteen, .container .offset13,
+  .container .offset-by-fourteen, .container .offset14,
+  .container .offset-by-fifteen, .container .offset15 {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    position: relative;
+    width: 420px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ 
+  .one.column,
+  .one.columns, .span1,
+  .two.columns, .span2,
+  .three.columns, .span3,
+  .four.columns, .span4,
+  .five.columns, .span5,
+  .six.columns, .span6,
+  .seven.columns, .span7,
+  .eight.columns, .span8,
+  .nine.columns, .span9,
+  .ten.columns, .span10,
+  .eleven.columns, .span11,
+  .twelve.columns, .span12,
+  .thirteen.columns, .span13,
+  .fourteen.columns, .span14,
+  .fifteen.columns, .span15,
+  .sixteen.columns, .span16,
+  .one-third.column,
+  .two-thirds.column,
+  .col,
+  .one-third.column.alpha,
+  .one-third.column.omega,
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: 400px;
+	margin-bottom:5px;
+  }
+ 
+  .one_half,
+  .one_third,
+  .two_thirds,
+  .three_fourths,
+  .one_fourth,
+  .one_fifth,
+  .two_fifth,
+  .three_fifth,
+  .four_fifth,
+  .one_sixth,
+  .five_sixth {
+    width: 100% !important;
+  }
+ 
+  .column, .columns {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+  margin-right: 10px;
+margin-bottom: 5px;
+  }
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+  }
+  .column.omega, .columns.omega {
+    margin-right: 0;
+  }
+ 
+  .container .offset-by-one, .container .offset1,
+  .container .offset-by-two, .container .offset2,
+  .container .offset-by-three, .container .offset3,
+  .container .offset-by-four, .container .offset4,
+  .container .offset-by-five, .container .offset5,
+  .container .offset-by-six, .container .offset6,
+  .container .offset-by-seven, .container .offset7,
+  .container .offset-by-eight, .container .offset8,
+  .container .offset-by-nine, .container .offset9,
+  .container .offset-by-ten, .container .offset10,
+  .container .offset-by-eleven, .container .offset11,
+  .container .offset-by-twelve, .container .offset12,
+  .container .offset-by-thirteen, .container .offset13,
+  .container .offset-by-fourteen, .container .offset14,
+  .container .offset-by-fifteen, .container .offset15 {
+    padding-left: 0;
+  }
+}
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+ 
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+ 
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+ 
+.row,
+.clearfix {
+  zoom: 1;
+}
+ 
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+ 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

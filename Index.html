@@ -1,0 +1,436 @@
+
+<html>
+
+          <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+          <link rel="shortcut icon" href="favicon.ico">
+
+          <title>..:: Colegio Don Jose de San Martin ::..</title>
+
+          <script type="text/javascript" src="js/script.js"></script>
+          <link rel="stylesheet" href="css/bst/bootstrap.min.css">
+
+          <link href="css/back.css" rel="stylesheet" type="text/css" />
+          <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+          <link href="css/style.css" rel="stylesheet" type="text/css" />
+          <link href="css/default.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" href="css/estilos.css">
+
+          <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+          <!--TODO ESCRIPT  ----SALO-->
+          <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+      <div id="banner"  style=" background-color:#04388c;">
+          <div class="container" >
+               <div class="four columns"  >
+                  <div style="height:10px"></div>
+                  <a href="../index-2.html"><img src="img/alpamayo_logo.png" border="0"  /></a>
+               </div>
+               <div class="twelve columns"  >
+                   <div class="eight columns"  style="float:right; margin-top: 5px; padding:5px; background-color:#032f76"  >
+                      <div class="one_fourth nopadding" style="text-align:center"  >
+                      <a href="index.html" class="link_01a">Inicio</a>
+                      </div>
+                       <div class="one_fourth nopadding" style="text-align:center" >
+                       <a href="institucion.html"  class="link_01">Organizacion</a>
+                       </div>
+                       <div class="one_fourth nopadding" style="text-align:center" >
+                       <a href="#"  class="link_01c">Version Español</a>
+                       </div>
+
+                        <div class="one_fourth nopadding"  style="text-align:center" ><a href="intranet.html" target="_blank"  class="link_01d">Ingresar</a>
+                        </div>
+                        <div class="one_fourth nopadding"  style="text-align:center" ><a href="intranet.html" target="_blank"  class="link_02">EXTRANET</a>
+                        </div>
+                  </div>
+               </div>
+
+          </div>
+      </div>
+
+      <div id="banner"  style="background-image:url(img/back_botonera.jpg); background-repeat:repeat-x">
+
+  <!------CONTENEDOR MENU-->
+      <div class="container" >
+          <!--TODO-- ESTILOS 1-->
+                              <style>
+
+                              </style>
+          <a class="toggleMenu" href="#" style="display: inline-block;"><img src="img/ico_responsive.png"  /></a>
+              <ul class="nav" style="display: none;">
+                    <li><a href="index.html" >Inicio</a></li>
+
+                   <li> <a href="#"> Institucion </a>
+                       <ul >
+                           <li><a href="Institucion.html">Mision </a></li>
+                           <li><a href="Institucion.html">Vision</a></li>
+
+                       </ul>
+                   </li>
+                  <li><a href="contactos.html"> Pre-Matricula </a></li>
+
+   				        <li><a href="reseña.html" >Reseña</a></li>
+
+                  <li> <a href="fotos.html"> Fotos </a>
+                      <ul >
+                          <li><a href="fotos.html">Logros </a></li>
+                          <li><a href="fotos.html">Colegio</a></li>
+                          <li><a href="fotos.html">Docentes</a></li>
+                      </ul>
+                  </li>
+
+              		<li><a href="logros.html" target="_blank">Logros</a></li>
+
+                  <li><a href="contactos.html" >Contactos</a></li>
+            </ul>
+      </div>
+    <!------ FIN   CONTENEDOR MENU-->
+
+
+    <!------ SCRIPT PARA MENU ---->
+              <script>
+                var ww = document.body.clientWidth;
+            $(document).ready(function () {
+                $('.nav li a').each(function () {
+                    if ($(this).next().length > 0) {
+                        $(this).addClass('parent');
+                    }
+                    ;
+                });
+                $('.toggleMenu').click(function (e) {
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    $('.nav').toggle();
+                });
+                adjustMenu();
+            });
+            $(window).bind('resize orientationchange', function () {
+                ww = document.body.clientWidth;
+                adjustMenu();
+            });
+            var adjustMenu = function () {
+                if (ww < 959) {
+                    if (!$('.more')[0]) {
+                        $('<div class="more">&nbsp;</div>').insertBefore($('.parent'));
+                    }
+
+                    $('.toggleMenu').css('display', 'inline-block');
+                    if (!$('.toggleMenu').hasClass('active')) {
+                        $('.nav').hide();
+                    } else {
+                        $('.nav').show();
+                    }
+                    $('.nav li').unbind('mouseenter mouseleave');
+                    $('.nav li a.parent').unbind('click');
+                    $('.nav li .more').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+            		 $('.nav li .more2').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+            		 $('.nav li .more3').unbind('click').bind('click', function () {
+                        $(this).parent('li').toggleClass('hover');
+                    });
+
+                } else if (ww >= 959) {
+                    $('.more').remove();
+            		$('.more2').show();
+            		$('.more3').show();
+                    $('.toggleMenu').css('display', 'none');
+                    $('.nav').show();
+                    $('.nav li').removeClass('hover');
+                    $('.nav li a').unbind('click');
+                    $('.nav li').unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function () {
+                        $(this).toggleClass('hover');
+                    });
+                }
+            };
+        </script>
+
+          <!------ FIN  SCRIPT PARA MENU ---->
+
+
+
+
+
+
+          <!-------------------------------- BARNER ANIMADO------>
+           <div class="container"><div class="cont3-sep"></div>
+                   <br>
+                   <script src="banner_full/jquery-1.8.3.min.js" /></script>
+                   <script src="banner_full/jquery.royalslider.min.js" /></script>
+                   <link href="banner_full/royalslider.css" rel="stylesheet">
+                   <link href="banner_full/rs-minimal-white.css" rel="stylesheet">
+                   <script>
+                   /* revisar opciones http://dimsemenov.com/plugins/royal-slider/documentation/?s=dp */
+                   jQuery(document).ready(function($) {
+                     $('#full-width-slider').royalSlider({
+                       arrowsNav: true, /* fechitas dereca izaquierda*/
+                       loop: true, /*false si regresa al inio la aimacion / true si sigue de corrido*/
+                       keyboardNavEnabled: true, /* si quieres mover con el mouse  */
+                       controlsInside: false, /* Si se define como true a�ade flechas y el bot�n de pantalla completa en el interior de contenedores rsOverflow, de lo contrario dentro del contenedor deslizante ra�z */
+                       imageScaleMode: 'fill',/* investigar "fill", "fit", "fit-if-smaller" or "none" / */
+                       arrowsNavAutoHide: true,/* true para mostrar las flechitas y ocultarlas*/
+                       autoScaleSlider: true, /* Automatically updates slider height based on base width.  */
+                       autoScaleSliderWidth: 1180,
+                       autoScaleSliderHeight: 360,
+                       controlNavigation: 'bullets', /* investigar Navigation type, can be 'bullets', 'thumbnails', 'tabs' or 'none' */
+                       thumbsFitInViewport: false,
+                       navigateByClick: true, /* cambia el banner al dar clic*/
+                       startSlideId: 0,/* con que banner comienza*/
+                       autoPlay: true,
+                       transitionType:'move',/* move o fade*/
+                       globalCaption: false,
+                     slidesOrientation: 'horizontal',/*Can be 'vertical' or 'horizontal'.*/
+                       deeplinking: {
+                         enabled: true,
+                         change: false
+                       },
+                       /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
+                       imgWidth: 1180,
+                       imgHeight: 360,
+
+                     autoPlay: {
+                      enabled: true,
+                       stopAtAction: false,/*	Stop autoplay at first user action.*/
+                     pauseOnHover: false, /*	Pause autoplay on hover.*/
+                      delay: 4000
+                     },
+                     });
+                   });
+
+                   </script>
+
+                   <style>
+                   #full-width-slider {
+                     width: 100%;
+                     color: #FFF;
+                   }
+                   .coloredBlock {
+                     padding: 12px;
+                     /*background: rgba(255,0,0,0.6);
+                     color: #FFF;*/
+                      width: 250px;
+                      left: 20%;
+                      top: 5%;
+                   }
+                   .infoBlock {
+                     position: absolute;
+                     top: 25%;
+                     left: 20px;
+                     max-width: 700px;
+                     /*background: #FFF;
+                     background: rgba(255, 255, 255, 0.8);*/
+                     overflow: hidden;
+                     text-align:right;
+                     padding: 45px;
+                   }
+                   .infoBlockLeftBlack {
+                     /*color: #FFF;
+                     background: #000;
+                     background: rgba(0,0,0,0.75);*/
+                     right: 100px;
+                     width:60%;
+                   }
+
+
+                   .infoBlock p {
+                     font-family: 'Source Sans Pro';
+                     font-style: normal;
+                     font-weight: 700;
+                     src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGFxe-GPfKKFmiXaJ_Q0GFr8.woff2) format('woff2');
+                     unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+                     text-decoration:none;
+                       font-size:64px;
+                     line-height:70px;
+                     margin: 0;
+                     padding-bottom: 3px;
+                     text-align:left;
+                       color: #FFF;
+
+                   }
+                   .infoBlock a {
+                     font-family: 'Source Sans Pro';
+                     font-style: normal;
+                     font-weight: 600;
+                     src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format('woff');
+                     color: #000;
+                     text-decoration: none;
+                       font-size:20px;
+                     line-height:25px;
+                   }
+                   .photosBy {
+                     position: absolute;
+                     line-height: 24px;
+                     font-size: 12px;
+                     background: #FFF;
+                     /*color: #000;*/
+                     padding: 0px 10px;
+                     position: absolute;
+                     left: 12px;
+                     bottom: 12px;
+                     top: auto;
+                     border-radius: 2px;
+                     z-index: 25;
+                   }
+                   .photosBy a {
+                     /*color: #000;*/
+                   }
+                   .fullWidth {
+                     max-width: 1180px;
+                     margin: 0 auto 24px;
+                   }
+
+                   @media screen and (min-width:960px) and (min-height:660px) {
+                     .heroSlider .rsOverflow,
+                     .royalSlider.heroSlider {
+                         height: 360px !important;
+                     }
+                   }
+
+                   @media screen and (min-width:960px) and (min-height:1000px) {
+                       .heroSlider .rsOverflow,
+                       .royalSlider.heroSlider {
+                           height: 360px !important;
+                       }
+                   }
+                   @media screen and (min-width: 0px) and (max-width: 800px) {
+                     .royalSlider.heroSlider,
+                     .royalSlider.heroSlider .rsOverflow {
+                       height: 300px !important;
+                     }
+                     .infoBlock {
+                       padding: 10px;
+                       height: auto;
+                       max-height: 100%;
+                       min-width: 40%;
+                        top: 20%;
+                       right: auto;
+                       font-size: 12px;
+                     }
+                     .infoBlock h3 {
+                        font-size: 40px;
+                        line-height: 45px;
+                     }
+                     .infoBlock p {
+                        font-size: 40px;
+                        line-height: 45px;
+                     }
+                   }
+
+
+
+                   </style>
+
+                   <div id="full-width-slider" class="royalSlider heroSlider rsMinW">
+
+
+
+                   <div class="rsContent">
+                   <a href="admission/admissions-2020.html" target="_self"><img class="rsImg" src="img_banner/arriba.jpg" alt="" border="0">
+                   <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+                   <a href="admission/admissions-2020.html" target="_self"><p>Siempre Arriba</p></a>
+
+                   </div>
+                   </div>
+
+
+
+
+                   <div class="rsContent">
+                     <a href="en/family.html" target="_self"><img class="rsImg" src="img_banner/familia.jpg" alt="Family" border="0">
+                     <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+                     <a href="en/family.html" target="_self"><p>Familia</p></a>
+                     </div>
+                   </div>
+
+
+
+
+                   <div class="rsContent">
+                   <a href="en/contacto.html" target="_self"><img class="rsImg" src="img_banner/lideres.jpg" alt="Contact us" border="0">
+                   <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
+                   <a href="en/contacto.html" target="_self"><p>Educando Líderes</p></a>
+
+                   </div>
+                   </div>
+
+
+
+                   </div>
+
+
+                   <div class="cont3-sep"></div>
+           </div>
+
+
+<!------------------------------------------  FINN    BARNER ANIMADO------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!------------------------------------------------  ANTES FOOTER-->
+          <div class="container">
+              <div class="thin-sep"></div>
+              <div class="one_sixth nopadding">
+                <a href="http://www.munitacna.gob.pe/" target="_blank"><img src="img/logo_nidotorrecillas.jpg"  border="0" class="scaleimg" /></a>
+              </div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.minedu.gob.pe/" target="_blank"><img src="img/ps_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://iestpvigil.edu.pe/" target="_blank"><img src="img/salcantay_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.unjbg.edu.pe/portal/" target="_blank"><img src="img/ib.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.munialtoalianza.gob.pe/" target="_blank"><img src="img/ibsc_logo.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.upt.edu.pe/upt/web/index.php" target="_blank"><img src="img/logo_udenavarra.jpg" border="0"  class="scaleimg" /></a></div>
+
+              <div class="one_sixth nopadding">
+              <a href="http://www.ceid.unjbg.edu.pe/" target="_blank"><img src="img/logo_udepiura.jpg"  border="0"  class="scaleimg" /></a></div>
+          </div>
+          <!------ FIN ANTES FOOTER-->
+
+
+                  <div style="height:30px">&nbsp;</div>
+                  <div class="five_sixth nopadding" style=" background-image:url(img/pie_back.jpg); background-repeat: repeat-x; background-color:#06368b">
+                  <div class="container" style="padding-bottom:30px; padding-top:45px;" >
+                      <div align="center">
+                        <p class="texto_pie">&copy; Colegio Don jose de San Martin - Colegio 42088.
+                            <br />
+                              Av. Juan Moore 312. Alto de La Alianza - Tacna - Perú.<br />
+                           Telefono: (052) 310001 | Email:
+                            djsm-tacna02@yahoo.es     <br /><br />
+                            © 2017 Lizethe Evenling Mamani Pacohuanaco - Todos los derechos reservados
+                                <a href="https://www.facebook.com/lizette.mamani.7?lst=100003815207866%3A100003872864523%3A1508729171" target="_blank" class="menu_avra">Lize</a>
+                          </p>
+                        <p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p><p class="texto_pie">&nbsp;</p>
+                      </div>
+                  </div>
+
+                  <script type="text/javascript" src="js/bootstrap.min.js">
+
+                  </script>
+
+</body>
+</html>

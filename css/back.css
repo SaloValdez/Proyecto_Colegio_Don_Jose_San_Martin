@@ -1,0 +1,36 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+body{
+
+	background-position: top;
+	/*background-image:url(../images/back.jpg);
+	background-repeat: repeat-x;*/
+	background-color:#FFF;
+	margin-left: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+	font-size:18px;
+	color:#474747;
+	line-height:22px;
+}
+/*
+body{
+	background-color:#FFF;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#474747;
+	line-height:18px;
+	height: 100%;
+ 	width:100%;
+	
+}
+*/

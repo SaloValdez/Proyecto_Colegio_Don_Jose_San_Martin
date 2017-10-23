@@ -1,0 +1,1328 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+html{overflow-x:hidden;}
+
+#w-wrap{
+	position:relative;
+	widows:100%;
+}
+
+
+#wrap{
+	position:relative;
+	margin:0px auto;
+	width:1200px;
+	height:auto;
+	border:none;
+	/*background-color:#FFFFFF;*/
+}
+
+#header{
+	width:1200px;
+	height:196px;
+	margin-top:0;
+	/*background-image: url(../images/back_menu.png);
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;*/
+}
+
+#left{
+	display:block;
+	width:300px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:5px;
+	float:left;
+	margin-bottom:10px;
+}
+
+#rigth{
+	display:block;
+	width:auto;
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:10px;
+	margin-bottom:10px;
+	float:right;
+}
+
+
+
+#navegar{
+	width:1200px;
+	padding:0px;
+}
+
+#banner{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#banner2{
+    position: relative;
+    width: 100%;
+	height:360px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/*
+#destacados{
+	width:1200px;
+	height:auto;
+	margin-top:5px;
+	margin-bottom:0;
+	background-image: url(../images/back_dest.jpg);
+	background-repeat: no-repeat;
+	background-color:#FFF;
+}
+*/
+/*
+#bannerch{
+	width:1200px;
+	margin-bottom:0px;
+	margin-top:0px;
+
+}*/
+
+#footer{
+	position:relative;
+	width:100%;
+	height:auto;
+	background-position: top;
+	background-position: top;
+	/*background-image: url(../images/back_foot.jpg); 
+	background-repeat: repeat-x;
+	background-color:#701315;*/
+	margin-left: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#ababab;
+	font-size:13px;
+	line-height:15px;	
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	
+}
+
+
+#background
+{
+	position:absolute;
+	/*top:0px;*/
+	bottom:0px;
+	right:0px;
+	vertical-align:bottom;
+	vertical-align:text-bottom;
+	z-index:-1000;
+	overflow:hidden;
+}
+/******************************************************
+ESTILOS MENU 
+******************************************************/
+
+#contenido ol {
+padding-left: 0; /*Limpieza de m?rgenes (se puede cambiar)*/
+margin-left:  0; /*Indentado de la lista (se puede cambiar)*/
+list-style-type: decimal-leading-zero; /*Quitar estilo de vi?eta*/
+}
+
+#contenido ul {
+padding-left: 0; /*Limpieza de m?rgenes (se puede cambiar)*/
+margin-left:  0; /*Indentado de la lista (se puede cambiar)*/
+list-style-image: url(http://www.alpamayo.edu.pe/images/vineta2.png);
+
+}
+
+#contenido li {
+    
+    padding: 0;  
+    margin:0 0 10px 30px;  
+    border:none; 
+}
+
+
+#contenido a:link {text-decoration: none; color:#06368b }
+#contenido a:visited {text-decoration: none; color:#06368b}
+#contenido a:active {text-decoration: none; color:#06368b}
+#contenido a:hover {text-decoration: underline; }
+
+#test1 {  display: list-item; margin-bottom:10px; list-style-image: url(http://www.alpamayo.edu.pe/images/vineta.png) ; list-style-position: inside; text-decoration:underline }
+
+#contenido table{
+    border-collapse: collapse;
+    border: thin #919191;
+}
+ 
+#contenido th {
+}
+ 
+#contenido tbody {
+}
+#contenido tr {
+} 
+#contenido td {
+}
+
+/*********************************************************/
+
+.texto_destacados {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:16px;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+a.menu_destacados {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:20px;
+	line-height:25px;
+	margin:0;	
+	color:#06368b;
+	text-decoration:none;
+
+}
+a.menu_destacados:link, a.menu_destacados:visited, a.menu_destacados:active {
+   text-decoration: none;
+
+}
+a.menu_destacados:hover {
+	color:#474747;
+	
+}
+
+
+a.menu_destacados2 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+  font-size:16px;
+	display: block;
+	color:#474747;
+	text-decoration:none; 
+	background-image:url(http://www.alpamayo.edu.pe/images/vineta.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding: 8px 20px 8px 0;
+	
+
+}
+a.menu_destacados2:link, a.menu_destacados2:visited, a.menu_destacados2:active {
+   text-decoration: none;
+
+}
+a.menu_destacados2:hover {
+	color:#06368b;
+	
+}
+
+
+a.link_01 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#FFF;
+	text-decoration:none;
+	background-image:url(http://www.alpamayo.edu.pe/images/mapa_de_sitio_ico.png) ;
+	background-repeat:no-repeat;
+	padding-left:20px; 
+}
+a.link_01:link, a.link_01:visited, a.link_01:active {
+   text-decoration: none;
+
+}
+a.link_01:hover {
+	color:#acd1d9;
+	text-decoration:underline;
+	
+}
+
+
+a.link_01a {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#FFF;
+	text-decoration:none;
+	background-image: url(http://www.alpamayo.edu.pe/images/pagina_principal_ico.png) ;
+	background-repeat:no-repeat;
+	padding-left:20px; 
+}
+a.link_01a:link, a.link_01a:visited, a.link_01a:active {
+   text-decoration: none;
+
+}
+a.link_01a:hover {
+	color:#acd1d9;
+	text-decoration:underline;
+	
+}
+
+
+a.link_01b {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#FFF;
+	text-decoration:none;
+	background-image: url(http://www.alpamayo.edu.pe/images/usa.png) ;
+	background-repeat:no-repeat;
+	padding-left:20px; 
+}
+a.link_01b:link, a.link_01b:visited, a.link_01b:active {
+   text-decoration: none;
+
+}
+a.link_01b:hover {
+	color:#acd1d9;
+	text-decoration:underline;
+	
+}
+
+
+a.link_01d {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#FFF;
+	text-decoration:none;
+	/*background-image: url(../images/usa.png) ;*/
+	background-repeat:no-repeat;
+	padding-left:20px; 
+}
+a.link_01d:link, a.link_01d:visited, a.link_01d:active {
+   text-decoration: none;
+
+}
+a.link_01d:hover {
+	color:#acd1d9;
+	text-decoration:underline;
+	
+}
+
+
+a.link_01c {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#FFF;
+	text-decoration:none;
+	background-image: url(http://www.alpamayo.edu.pe/images/spain.png) ;
+	background-repeat:no-repeat;
+	padding-left:20px; 
+}
+a.link_01c:link, a.link_01c:visited, a.link_01c:active {
+   text-decoration: none;
+
+}
+a.link_01c:hover {
+	color:#acd1d9;
+	text-decoration:underline;
+	
+}
+
+a.link_02 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#f7941e;
+	text-decoration:none;
+	background-image: url(http://www.alpamayo.edu.pe/images/extranet_ico.png);
+	background-repeat:no-repeat;
+	padding-left:20px; 
+
+}
+a.link_02:link, a.link_02:visited, a.link_02:active {
+   text-decoration: none;
+
+}
+a.link_02:hover {
+	color:#f7941e;
+	text-decoration:underline;
+	
+}
+
+
+a.link_03 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#06368b;
+	text-decoration:none;
+}
+a.link_03:link, a.link_03:visited, a.link_03:active {
+   text-decoration: none;
+
+}
+a.link_03:hover {
+	color:#474747;
+	
+}
+
+
+a.link_filtros {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:14px;
+	color:#474747;
+	text-decoration:none;
+	margin:10px 0 ;
+	
+	
+}
+a.link_filtros:link, a.link_filtros:visited, a.link_filtros:active{
+	text-decoration: none;
+
+}
+a.link_filtros:hover {
+
+	text-decoration: none;
+	color: #474747;
+}
+
+
+a.link_producto_titulo {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:16px;
+	line-height:18px;
+	color:#FFF;
+	text-decoration:none;
+
+}
+a.link_producto_titulo:link, a.link_producto_titulo:visited, a.link_producto_titulo:active{
+	text-decoration: none;
+
+}
+a.link_producto_titulo:hover {
+
+	text-decoration: none;
+	color: #F3F3F3;
+}
+
+a.link_producto_texto {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:20px;
+	color:#FFF;
+	text-decoration:none;
+	margin:10px;
+	
+}
+a.link_producto_texto:link, a.link_producto_texto:visited, a.link_producto_texto:active{
+	text-decoration: none;
+
+}
+a.link_producto_texto:hover {
+
+	text-decoration: none;
+	color: #F3F3F3;
+}
+/******************************************************
+PIE DE P�GINA
+******************************************************/
+
+
+.texto_pie{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+	
+}
+
+
+a.menu_pie_tit {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+
+a.menu_pie_tit:link, a.menu_pie_tit:visited, a.menu_pie_tit:active {
+	text-decoration: none;
+
+}
+
+a.menu_pie_tit:hover {
+	color:#FFFFFF;
+	/*background-color:#067cad;
+	background: transparent url(../images/back_menu2.jpg) center center repeat-x;*/
+}
+a.menu_pie {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+
+a.menu_pie:link, a.menu_pie:visited, a.menu_pie:active {
+	text-decoration: none;
+
+}
+
+a.menu_pie:hover {
+	color:#FFFFFF;
+	/*background-color:#067cad;
+	background: transparent url(../images/back_menu2.jpg) center center repeat-x;*/
+}
+
+/******************************************************
+LINK AVRA
+******************************************************/
+
+.texto_avra{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+	
+}
+
+a.menu_avra {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  	font-size:14px;
+	line-height:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+a.menu_avra:link, a.menu_avra:visited, a.menu_avra:active {
+	text-decoration: none;
+
+}
+a.menu_avra:hover {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+
+/******************************************************
+ESTILOS GENERALES Navegacion 
+******************************************************/
+.texto_navegacion{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+	font-size:14px;
+	color:#06368b;
+	text-decoration:none;
+	line-height:20px;
+	margin:0;
+	
+}
+
+.texto_navegacion_{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	font-size:20px;
+	color:#474747;
+	text-decoration:none;
+	line-height:25px;
+	margin:0;
+	
+}
+
+
+
+a.link_navegacion{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#474747;
+	text-decoration: none;	
+	
+}
+a.link_navegacion:link, a.link_navegacion:visited, a.link_navegacion:active{
+	text-decoration: none;
+
+}
+a.link_navegacion:hover {
+
+	text-decoration: none;
+	color: #06368b;
+}
+
+/***************************************************************/
+
+a.link_subtitulo{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:12px;
+	font-size:20px;
+	color:#777777;
+	text-decoration:none;
+	line-height:25px;
+	padding:0 0 20px 0;
+	margin:0;
+	
+}
+a.link_subtitulo:link, a.link_subtitulo:visited, a.link_subtitulo:active{
+	text-decoration: none;
+
+}
+a.link_subtitulo:hover {
+
+	text-decoration: none;
+	color: #0d5166;
+}
+
+
+/******************************************************
+ESTILOS GENERALES TITULOS 
+******************************************************/
+
+
+a.link_titulo_noticia{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+	font-size:24px;
+	color:#06368b;
+	text-decoration:none;
+	line-height:30px;
+	margin:0;
+	padding:0;
+	text-align:left;
+
+
+}
+a.link_titulo_noticia:link, a.link_titulo_noticia:visited, a.link_titulo_noticia:active{
+	text-decoration: none;
+
+}
+a.link_titulo_noticia:hover {
+
+	text-decoration: none;
+	color: #06368b;
+}
+
+
+
+
+a.link_texto_noticia {
+	  font-family: 'Source Sans Pro';
+	  font-style: normal;
+	  font-weight: 300;
+	  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+	  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+
+  font-size:16px;
+	color:#474747;
+	text-decoration:none;
+	line-height:20px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+a.link_texto_noticia:link, a.link_texto_noticia:visited, a.link_texto_noticia:active{
+	text-decoration: none;
+
+}
+a.link_texto_noticia:hover {
+
+	text-decoration: none;
+	color: #06368b;
+}
+
+a.link_texto_noticia2 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:18px;
+	color:#333333;
+	text-decoration:none;
+	line-height:20px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+a.link_texto_noticia2:link, a.link_texto_noticia2:visited, a.link_texto_noticia2:active{
+	text-decoration: none;
+
+}
+a.link_texto_noticia2:hover {
+
+	/*text-decoration: underline;*/
+	color: #404548;
+}
+
+
+a.link_texto_noticia3 {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  font-size:14px;
+	color:#444444;
+	text-decoration:none;
+	line-height:18px;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+a.link_texto_noticia3:link, a.link_texto_noticia3:visited, a.link_texto_noticia3:active{
+	text-decoration: none;
+
+}
+a.link_texto_noticia3:hover {
+
+	/*text-decoration: underline;*/
+	color: #404548;
+}
+
+.titulo_contenido{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format('woff');
+  
+	font-size:30px;
+	color:#505050;
+	text-decoration:none;
+	line-height:35px;
+	text-transform:uppercase;
+}
+
+.texto_conte{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+	font-size:18px;
+	color:#404548;
+	line-height:22px;
+	text-decoration:none;
+	
+}
+
+
+
+/******************************************************
+ESTILOS GENERALES IMAGENES 
+******************************************************/
+.img_sin_border{
+	border:0px;
+	padding:0;
+	margin-bottom:10px;
+}
+
+.img_border{
+	border:0;
+	padding: 0;
+	margin: 0;
+	border:#94d4ff 3px solid;
+}
+
+.img_galeria{
+	border:0 ;
+	padding:5px ;
+
+}
+
+
+.img_galeria_right{
+	border:#d9d9d9 0px solid;
+	padding:0 15px 15px 0;
+
+
+}
+
+.img_galeria_index{
+	border:#FFF 3px solid;
+	padding:0;
+	margin:0 10px 0 0;
+
+
+}
+
+.img_galeria_02{
+padding:5px;
+
+
+}
+/******************************************************
+ESTILOS GENERALES palabras claves 
+******************************************************/
+
+a.menu_palabra_clave {
+position:static;
+display:block;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:14px;
+	color:#FFF;
+	width:auto;
+	height:40px;
+	padding:10px;
+	margin:10px 5px;
+	background-color:#333333;
+}
+a.menu_palabra_clave:link, a.menu_palabra_clave:visited, a.menu_palabra_clave:active {
+	text-decoration: none;
+
+}
+a.menu_palabra_clave:hover {
+	color:#646464;
+	text-decoration: underline;
+}
+
+a.menu_descarga {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:20px;
+	color:#4bb28b;
+}
+a.menu_descarga:link, a.menu_descarga:visited, a.menu_descarga:active {
+	text-decoration: none;
+
+}
+a.menu_descarga:hover {
+	color:#393939;
+	text-decoration: underline;
+}
+
+
+.texto_descarga{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:18px;
+	color:#4bb28b;
+	/*background: url(../images/iconos/ico_download_over.jpg) no-repeat;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-top:0px;*/
+	
+}
+
+
+
+/* -------------------------------------TAGS  -------------------------*/
+
+ul.tag {
+ /* background: #F4F4F4;
+  border: 1px solid #7C7C7C;*/
+    font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.tag li {
+  float: left;
+  width: auto;
+  
+}
+ul.tag li a {
+  color: #06368b;
+  text-decoration: none;
+  text-align:center;
+  margin:2px;
+}
+
+.texto_tag{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:14px;
+	color:#333333;
+	text-decoration:none;
+	/*background: url(../images/iconos/ico_tag.png) no-repeat;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-top:0px;*/
+
+}
+/* -------------------------------------FECHA  -------------------------*/
+
+
+.textbox_fecha{
+ font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+	font-size:14px;
+	color:#06368b;
+	text-decoration:none;
+	/*background: url(../images/iconos/ico_tag.png) no-repeat;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-top:0px;*/
+
+}
+
+
+
+/*/////FORMULARIO/////*/
+
+/******************************************************
+ESTILOS GENERALES BOTONES 
+******************************************************/
+.ver_mas
+{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	font-size:20px;
+	color:#06368b;
+	text-decoration:none;
+	line-height:25px;
+	/*background: url(../imagenes/lineas.jpg) repeat-x;*/
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+.ver_mas:hover
+{
+}
+
+
+.link_paginacion
+{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:14px;
+	color:#333333;
+	text-decoration:none;
+	line-height:25px;
+	/*background: url(../imagenes/lineas.jpg) repeat-x;*/
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+.link_paginacion:hover
+{
+	font-weight:bold;
+}
+
+/*/////FORMULARIO/////*/
+
+.textbox_capcha{
+	border: 1px;
+	border-style:solid;
+	border-color:#e1e1e1;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:14px;
+	color:#666;
+	background-color:#FFFFFF;
+	padding-left: 5px;
+	width:50px;
+	height:25px;
+	
+}
+
+.textbox_contactenos{
+	border: 1px;
+	border-style:solid;
+	border-color:#e1e1e1;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:14px;
+	color:#666;
+	background-color:#FFFFFF;
+	padding-left: 5px;
+	width:300px;
+	height:25px;
+	
+}
+
+
+.textbox_chico{
+	border: 1px;
+	border-style:solid;
+	border-color:#e1e1e1;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:14px;
+	color:#666;
+	background-color:#FFFFFF;
+	padding-left: 5px;
+	width:150px;
+	height:25px;
+	
+}
+
+.textarea{
+	border: 1px;
+	border-style:solid;
+	border-color:#e1e1e1;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; font-size:14px;
+	color:#666;
+	background-color:#FFFFFF;
+	padding-left: 5px;
+	width:300px;
+	height:70px;
+	
+}
+
+
+
+.textbox_buscar{
+	border: 0;
+	font-size: 15px; 
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+  color:#555555;
+	background-color:#FFFFFF;
+	padding-left:5px;
+	margin: -10px -8px;
+	width:88%;
+	height:33px;
+	
+}
+
+
+
+.boton_buscar
+{
+	background:  url(http://www.alpamayo.edu.pe/images/btn_buscar.jpg); background-repeat:no-repeat; height:36px; width:32px;
+	
+	font-weight:bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	border:0;
+	cursor:pointer;
+
+}
+
+
+.boton_back{
+    background: #06368b;
+    border: none;
+    color: #fff;
+    width: auto;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 20px;
+    		border-radius:2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+ }
+ 
+.boton_back input.boton_back:hover {
+    background: #666;
+}
+
+.soporte
+{
+		width: 100%;
+		height: auto;
+		border-radius:160px;
+		-webkit-border-radius: 160px;
+		-moz-border-radius: 160px;
+		margin: 24px auto -24px auto;
+		background: #373a3e center center no-repeat;
+
+}
+
+ul.youtube {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGD_j0nMiB9fPhg_k1wdK2h0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size:14px;
+  line-height:18px;
+  width: 100%;
+}
+ul.youtube li {
+  float: left;
+  width: 100%;
+  
+}
+ul.youtube li a {
+  color: #FFF;
+  display: block;
+  padding:5px 10px;
+  text-decoration: none;
+  margin:2px;
+}
+
+ul.youtube li a:hover {
+  background: #0e404d;
+  color: #FFF;
+  display: block;
+  padding:5px 10px;
+  text-decoration: none;
+  margin:2px;
+}
+
+
+/**************************** NEW STYLE ///////////////////////////*/
+
+.ocultar         { visibility: hidden; display:none }
+@media only screen and (min-width: 20px) and (max-width: 767px) {  
+.ocultar         { visibility: visible; display:inline; }
+}
+
+.ocultar2         { visibility: visible; display:inline; }
+@media only screen and (min-width: 20px) and (max-width: 767px) {  
+.ocultar2         { visibility: hidden; display:none }
+}
+
+#categoria{
+	position: relative;
+	float:left;
+	z-index:99999;
+	background-color:#000;
+	opacity:.80;
+	filter:alpha(opacity=80);
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	color:#FFFFFF;
+	font-size:22px;
+	height:90px;
+	width:100%;
+	padding:10px;
+	margin-top:-90px;
+	
+}
+
+#categoria2{
+	position:absolute;
+	float:left;
+	z-index:999999;
+	background-color:#b40015;
+	/*opacity:.80;
+	filter:alpha(opacity=80);*/
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+  text-transform:uppercase;
+	color:#FFFFFF;
+	font-size:16px;
+	height:40px;
+	width:80px;
+	padding:10px;
+	top:94px;
+	
+}
+
+#categoria3{
+	position: relative;
+	float:left;
+	z-index:99999;
+	background-color:#000;
+	opacity:.80;
+	filter:alpha(opacity=80);
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlC2Q8seG17bfDXYR_jUsrzg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; 
+	color:#FFFFFF;
+	font-size:22px;
+	height:50px;
+	width:100%;
+	padding:10px;
+	margin-top:-50px;
+	
+}
+
+
+#centrar {
+width: 100%;
+    height: auto;
+	margin:0 auto;
+	text-align:center;
+	
+	
+}
+
+/***********************LINEAS***********/
+.thin-sep { height: 1px; background-color: #d9e9ec; width: 100%; margin: 1% auto 1.5% auto; position: relative; float:left}
+.bold-sep { height: 2px; background-color: #06368b; width: 100%; margin: 1% auto 2% auto; position: relative; float:left }
+.cont-sep { height: 1px; background-color: #d9e9ec; width: 100%; margin: 2% auto 2% auto; position: relative; float:left }
+.cont2-sep { height: 1px; background-color: #FFF; width: 100%; margin: 2% auto 4% auto; position: relative; float:left }
+.cont3-sep { height: 0; background-color: #FFF; width: 100%; margin: 1% auto 1% auto; position: relative; float:left }
+.cont4-sep { height: 1px; background-color: #FFF; width: 100%; margin: 0 auto 0 auto;  }
+
+.cont6-sep { height: 1px; background-color: #ffF;  width: 100%; margin: 4% auto 4% auto; position: relative; float:left }
+
+.cont5-sep { height: 2px; background-color: #d9e9ec; width: 100%; margin: 1.5% auto 2% auto; position: relative; float:left }
+
+/***********************FIN LINEAS***********/
+
+img.scaleimg {
+	width: 100%;
+    height: auto;
+}
+
+img.scaleimg2 {
+	width: 50%;
+    height: auto;
+}
+
+#logo {
+  padding-top: 0;
+  position: absolute;
+/*  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);-*/
+    top: 0;
+  
+  margin-left:0;
+  margin-top:0;
+  z-index:99999999;
+}
+
+@media only screen and ( max-width: 767px ){
+  #logo {
+    padding-top: 0;
+	top: 0;
+    position: relative;
+    /* logo left margin on Dekstop 
+    left: 2.4em;
+   
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);*/
+	margin:0 auto;
+  }
+  
+
+}
+
+
